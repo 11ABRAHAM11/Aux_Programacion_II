@@ -21,3 +21,14 @@ Para eso nos apoyaremos de la POO, para tener un codigo mas ordenado y estructur
 Solo recuerdalos, son 4:
 ### 1. Abstracion.
 Podemos sacar todos los detalles (atributos y metodos) de un objeto cualquiera, pero nos quedaremos solo con lo mas importante
+### 2. Encapsulamiento
+Proteje los datos para que nadie mas pueda tocar los atributos o metodos de una clase sin permiso
+### 3. Polimorfismo
+Usa un mismo metodo para distintas tareas
+### 4. Herecia
+Aprovecha el codigo que ya utilizaste o agrega nuevoas clases de manera mas cencillam reutiliza atributos y metodos
+
+## Abstraccion 
+Cada entidad puede ser clasificada, se puede obserbar o imaginar los atributos que tiene, un ejemplo comun es una persona:
+
+![Persona](https://media.istockphoto.com/id/1447925542/es/vector/hombre-de-negocios-de-pie-silueta-vectorial-aislada-vista-frontal-hombre-de-traje.jpg?s=612x612&w=0&k=20&c=mOLuMRZCHgEsXZ0KJ2Hm64EwNfmImR7OjT5KYIrACQA=)
