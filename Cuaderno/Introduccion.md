@@ -31,4 +31,4 @@ Aprovecha el codigo que ya utilizaste o agrega nuevoas clases de manera mas cenc
 ## Abstraccion 
 Cada entidad puede ser clasificada, se puede obserbar o imaginar los atributos que tiene, un ejemplo comun es una persona:
 
-![Persona](https://media.istockphoto.com/id/1447925542/es/vector/hombre-de-negocios-de-pie-silueta-vectorial-aislada-vista-frontal-hombre-de-traje.jpg?s=612x612&w=0&k=20&c=mOLuMRZCHgEsXZ0KJ2Hm64EwNfmImR7OjT5KYIrACQA=)
+<img src="https://media.istockphoto.com/id/1447925542/es/vector/hombre-de-negocios-de-pie-silueta-vectorial-aislada-vista-frontal-hombre-de-traje.jpg?s=612x612&w=0&k=20&c=mOLuMRZCHgEsXZ0KJ2Hm64EwNfmImR7OjT5KYIrACQA=" width="300" height="150">
