@@ -71,7 +71,6 @@ Son representaciones graficas de los objetos, se concentra aen mostrac el nombre
 <img src="https://www.webyempresas.com/wp-content/uploads/2021/11/diagrama-de-clases-uml.jpg" width="720" height="480">
 
 <img src="introduccion\Diagrama.jpeg" width="720" height="480">
-Cuaderno\introduccion\Diagrama.jpeg
 
 ## Abstraccion 
 Cada entidad puede ser clasificada, se puede obserbar o imaginar los atributos que tiene, un ejemplo comun es una persona:
@@ -91,6 +90,15 @@ classDiagram
         - peso: double
         - raza: str
         - genero: str
+        - carnet: int
+        - colorOjos: String
+        - colorPelo: String
+        - apodo: String
+        - personalidad: String
+        + comer()
+        + dormir()
+        + trabajar()
+        + estudiar()
 
     }
 
