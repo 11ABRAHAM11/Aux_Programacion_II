@@ -99,7 +99,70 @@ classDiagram
         + dormir()
         + trabajar()
         + estudiar()
+    }
+```
+Ademas le agregacom algunas acciones comunes que realiza una persona: comer, dormir, trabajar, estudiar.
+
+Este sera el modelo para automatizar personas, pero realmente todo es necesario?
+**Depende del contexto**
+
+No es lo mismo una persona para una banco:
+
+```mermaid
+classDiagram
+    class Persona {
+        - nombre: str
+        - edad: int
+        - genero: str
+        - carnet: int
+        + depositar()
+        + retirar()
+        + verificarSaldo()
+    }
+```
+
+Que para un gimnasio:
+
+```mermaid
+classDiagram
+    class Persona {
+        - nombre: str
+        - edad: int
+        - altura: double
+        - peso: double
+        - genero: str
+        - carnet: int
+        + registrar()
+        + calcularRutina()
 
     }
-
 ```
+Incluso los metodos cambian
+
+*los metodos representan las acciones que pueden hacer nuestros objetos*
+
+---
+
+## Legunajes de programacion
+
+Luego de poder abstraer una clase, saber que atributos y metodos son necesarios podemos pasar a "Traducir" nuestros diagramas a codigo de programacion. Trabajaremos con dos lenguajes escenciales que soportan manejo de clases y objetos. [Java](https://www.java.com/es/download/) y [Python](https://www.python.org/downloads/windows/).
+
+Trabajemos con la clase Animal:
+
+```mermaid
+classDiagram
+    class Animal {
+        - nombre: str
+        - edad: int
+    }
+```
+Empecemos por el nombre de la clase, usando netbeans:
+En file elegimos New Proyect...
+![nuevo proyecto](image.png)
+Luego seleccionamos java with Ant
+Java ASplication
+y damos siguiente
+![alt text](image-1.png)
+En proyect name le damos el nombre de neustra clase, en este caso Animal
+
+Eso nos creara el proyecto 
