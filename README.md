@@ -5,7 +5,7 @@
 ## Contenido:
 
 Se dividira el contenido en los siguientes temas:
-1. [Introduccion a la programacion a Objetos](Cuaderno\Introduccion.md)
+1. [Introduccion a la programacion a Objetos](https://github.com/JoeAdr04/Aux_Progrmacion_II/blob/main/Cuaderno/Introduccion.md)
 2. Polimorfismo
 3. Herencia
 4. Agregacion y Composicion
