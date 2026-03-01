@@ -1,4 +1,4 @@
-# Introduccion a la Programacion orientada a Objetos
+# INTRODUCCION A LA PROGRAMACION ORIENTADA A OBJETOS
 
 Antes de la **POO** (Programacion orientada a Objetos), programar era como dar una receta de cocina interminable (Programación Estructurada): si querías cambiar un ingrediente al final, a veces tenías que *reescribir toda la receta*.
 
@@ -31,8 +31,7 @@ Aprovecha el codigo que ya utilizaste o agrega nuevoas clases de manera mas cenc
 ## Conceptos importantes:
 ### Clase
 Es un molde que sirve para crear varios objetos, extrae las caracteristicas principales de los objetos y apartir de ello crear nuevos con distintas caracteristicas.
-### Objeto 
-**Instancia de una clase** se crea apartir de una clase, este toma las caracteristicas y le da valores
+
 
 ```mermaid
 classDiagram
@@ -43,8 +42,31 @@ classDiagram
     }
 
 ```
+
+~~~java
+public class Gato{
+    private String nombre; //atributo
+    private int edad; //atributo
+
+    public Gato(string n, int e){ //constructor
+        this.nombre = n;
+        this.edad = e;
+    }
+}
+~~~
+
+### Objeto 
+**Instancia de una clase** se crea apartir de una clase, este toma las caracteristicas y le da valores
+~~~java
+public class Principal{
+    public staatic void main (String args[]){
+        Gato g1 = new Gato("firulais", 4); //objeto de la clase gato
+        Gato g2 = new Gato("tom", 2); //otro objeto de la clase gato
+    }
+}
+~~~
 ## Diagramas de clases
-Son representaciones graficas de los objetos, las
+Son representaciones graficas de los objetos, se concentra aen mostrac el nombre de la clase, atributos(con encapsulamiento y tipo de dato) y metodos. 
 
 ## Abstraccion 
 Cada entidad puede ser clasificada, se puede obserbar o imaginar los atributos que tiene, un ejemplo comun es una persona:
