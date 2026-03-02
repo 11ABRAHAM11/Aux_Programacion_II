@@ -19,19 +19,28 @@ Para eso nos apoyaremos de la POO, para tener un codigo mas ordenado y estructur
 ## Pilares de La POO
 
 Solo recuerdalos, son 4:
-### 1. Abstracion.
+
+### 1. Abstracion
+
 Podemos sacar todos los detalles (atributos y metodos) de un objeto cualquiera, pero nos quedaremos solo con lo mas importante
+
 ### 2. Encapsulamiento
+
 Proteje los datos para que nadie mas pueda tocar los atributos o metodos de una clase sin permiso
+
 ### 3. Polimorfismo
+
 Usa un mismo metodo para distintas tareas
+
 ### 4. Herecia
+
 Aprovecha el codigo que ya utilizaste o agrega nuevoas clases de manera mas cencillam reutiliza atributos y metodos
 
-## Conceptos importantes:
-### Clase
-Es un molde que sirve para crear varios objetos, extrae las caracteristicas principales de los objetos y apartir de ello crear nuevos con distintas caracteristicas.
+## Conceptos importantes
 
+### Clase
+
+Es un molde que sirve para crear varios objetos, extrae las caracteristicas principales de los objetos y apartir de ello crear nuevos con distintas caracteristicas.
 
 ```mermaid
 classDiagram
@@ -55,8 +64,10 @@ public class Gato{
 }
 ~~~
 
-### Objeto 
+### Objeto
+
 **Instancia de una clase** se crea apartir de una clase, este toma las caracteristicas y le da valores
+
 ~~~java
 public class Principal{
     public staatic void main (String args[]){
@@ -65,14 +76,17 @@ public class Principal{
     }
 }
 ~~~
+
 ## Diagramas de clases
-Son representaciones graficas de los objetos, se concentra aen mostrac el nombre de la clase, atributos(con encapsulamiento y tipo de dato) y metodos. 
+
+Son representaciones graficas de los objetos, se concentra aen mostrac el nombre de la clase, atributos(con encapsulamiento y tipo de dato) y metodos.
 
 <img src="https://www.webyempresas.com/wp-content/uploads/2021/11/diagrama-de-clases-uml.jpg" width="720" height="480">
 
 <img src="introduccion\Diagrama.jpeg" width="720" height="480">
 
-## Abstraccion 
+## Abstraccion
+
 Cada entidad puede ser clasificada, se puede obserbar o imaginar los atributos que tiene, un ejemplo comun es una persona:
 
 <img src="https://media.istockphoto.com/id/1447925542/es/vector/hombre-de-negocios-de-pie-silueta-vectorial-aislada-vista-frontal-hombre-de-traje.jpg?s=612x612&w=0&k=20&c=mOLuMRZCHgEsXZ0KJ2Hm64EwNfmImR7OjT5KYIrACQA=" width="300" height="600">
@@ -101,6 +115,7 @@ classDiagram
         + estudiar()
     }
 ```
+
 Ademas le agregacom algunas acciones comunes que realiza una persona: comer, dormir, trabajar, estudiar.
 
 Este sera el modelo para automatizar personas, pero realmente todo es necesario?
@@ -137,6 +152,7 @@ classDiagram
 
     }
 ```
+
 Incluso los metodos cambian
 
 *los metodos representan las acciones que pueden hacer nuestros objetos*
@@ -158,6 +174,7 @@ classDiagram
 ```
 
 ### Java
+
 Empecemos por el nombre de la clase, usando netbeans:
 En file elegimos New Proyect...
 
@@ -199,6 +216,7 @@ Debemos de tener cuidado de donde creamos las clases, ya que si estamos en un pa
 <img src="WhatsApp Image 2026-03-01 at 17.15.42.jpeg" width="240" height="360">
 
 ### Python
+
 Para python no necesitamos mas que una archivo, podemos crearlo desde el idle
 
 ![alt text](image-8.png)
@@ -225,7 +243,8 @@ Esto abrira el cmd en esa ubicacion
 ![alt text](image-16.png)
 
 Ahora solo escribimos, con espacio
-~~~ 
+
+~~~
 code .
 ~~~
 
@@ -234,7 +253,8 @@ Eso abrira el visual studio en esa direccion
 ![alt text](image-17.png)
 
 ---
-##### Ahora si volvamos con la clase
+
+#### Ahora si volvamos con la clase
 
 ```mermaid
 classDiagram
@@ -268,7 +288,7 @@ classDiagram
 ~~~java
 public class Animal {
     
-    private String Nombre; //atributos
+    private String nombre; //atributos
     private int edad;
     
     public Animal(String nom, int ed){ //constructor que recibe una cadena y un entero
@@ -278,7 +298,7 @@ public class Animal {
 }
 ~~~
 
-**Para python** la declaracion de los atributos se hara directamente en el __init__ que es la forma de crear el constructor
+**Para python** la declaracion de los atributos se hara directamente en el **init** que es la forma de crear el constructor
 
 ~~~python
 class Animal():
@@ -297,9 +317,12 @@ Ademas identificamos diferenciamos el encapsulamiento con de la siguiente manera
 - self.nombre = nom (atributo publico)
 - self.__nombre = nom (atributo privado)
 
+*Los nombres de los atributos siempre con minusculas*
+
 Como definamos nuestro constructor sera la forma en la que crearemos nuestros objetos en la clase principal.
 
 #### Java
+
 ~~~java
 public class Ejemplo01 {
     public static void main(String[] args) {
@@ -309,8 +332,83 @@ public class Ejemplo01 {
 ~~~
 
 #### Python
+
+~~~python
+class Main():
+    a = Animal("Firulais", 4) //Mandamos un string y un entero
+~~~
+
+### toString()
+
+El toString() es una funcion especial que nos permite mostrar el objeto haciendo un print() o un System.out.println()
+
+Que pasa si imprimimos el objeto segun la clase que creamos
+
+#### Java
+
+~~~java
+public class Ejemplo01 {
+    public static void main(String[] args) {
+        Animal a = new Animal("Firulais", 4);
+        System.out.println(a);
+    }
+}
+~~~
+
+Salida 
+
+~~~
+run:
+ejemplo01.Animal@5f184fc6
+BUILD SUCCESSFUL (total time: 0 seconds)
+~~~
+
+#### Python
+
 ~~~python
 class Main():
     a = Animal("Firulais", 4)
+    print(a)
 ~~~
 
+Salida
+~~~
+<__main__.Animal object at 0x000001D46F0F6A50>
+~~~
+
+En ambos casos no se muestra mas que la direcciond memoria, podriamos usar un metodo para imprimir como:
+
+#### Java
+
+~~~java
+public class Animal {
+    
+    private String nombre; //atributos
+    private int edad;
+    
+    public Animal(String nom, int ed){ //constructor que recibe una cadena y un entero
+        this.nombre = nom; //llamada al atributo
+        this.edad = ed;
+    }
+    public void mostrar(){
+        System.out.println("Animal[nombre: "+this.nombre+", edad: "+this.edad+"]");
+    }
+}
+~~~
+
+~~~Java
+public class Ejemplo01 {
+    public static void main(String[] args) {
+        Animal a = new Animal("Firulais", 4);//mandamos un string y un entero
+        a.mostrar();
+    }
+}
+~~~
+
+Salida
+
+~~~
+run:
+Animal[nombre: Firulais, edad: 4]
+BUILD SUCCESSFUL (total time: 0 seconds)
+~~~
