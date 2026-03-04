@@ -1,10 +1,26 @@
-# Aux Programación II
+# Programacion Orientada a objetos - Auxiliatura
+
+> Repositorio para apuntes de las clases de auxiliatura de programacion II, Programacion orientada a objetos
+
+## Contenido:
+
+Se dividira el contenido en los siguientes temas:
+1. [Introduccion a la programacion a Objetos](https://github.com/JoeAdr04/Aux_Progrmacion_II/blob/main/Cuaderno/Introduccion.md)
+2. Polimorfismo
+3. Herencia
+4. Agregacion y Composicion
+5. Manejo de Excepciones
+6. Persistencia de objetos
+7. Generecidad
+
+---
+
+## Entrega de tarea
 
 Nombre: Abraham  
 Materia: Programación II  
 
-Descripción:
-Este repositorio contiene los siguientes ejercicios:
+Archivos agregados:
 - EJERCICIO1.py
 - EJERCICIO2.py
-- EJERCICIO3.py
+- EJERCICI3.py
